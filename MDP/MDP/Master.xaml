@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MDP.Master"
+             Title="Menu - Não Visível"
+             BackgroundColor="White">
+
+    <!-- menu lateral -->
+    <StackLayout>
+        <Image Source="http://images.static-bluray.com/reviews/8932_1.jpg" Aspect="AspectFill" />
+        <Button x:Name="btnPage1"
+                Text="Página 1"
+                Clicked="btnPage1_Clicked"/>
+        <Button x:Name="btnPage2"
+                Text="Página 2"
+                Clicked="btnPage2_Clicked"/>
+    </StackLayout>
+    
+</ContentPage>
