@@ -1,11 +1,25 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Padding="0,40,0,0"
              x:Class="MDP.Master"
-             Title="Menu - Não Visível"
+             Title="Menu"
              BackgroundColor="White">
 
-    <!-- menu lateral -->
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="FillAndExpand">
+            <Image Source="http://images.static-bluray.com/reviews/8932_1.jpg" Aspect="AspectFill" />
+            <ListView x:Name="listView" VerticalOptions="FillAndExpand" SeparatorVisibility="None">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ImageCell Text="{Binding Title}" ImageSource="{Binding IconSource}" />
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+    
+    <!-- menu lateral 
     <StackLayout>
         <Image Source="http://images.static-bluray.com/reviews/8932_1.jpg" Aspect="AspectFill" />
         <Button x:Name="btnPage1"
@@ -14,6 +28,6 @@
         <Button x:Name="btnPage2"
                 Text="Página 2"
                 Clicked="btnPage2_Clicked"/>
-    </StackLayout>
+    </StackLayout> -->
     
 </ContentPage>
