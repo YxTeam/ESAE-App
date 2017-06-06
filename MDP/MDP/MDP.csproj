@@ -38,6 +38,48 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="AreaAlunos\Defesas.xaml.cs">
+      <DependentUpon>Defesas.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AreaAlunos\EntregaTrabalho.xaml.cs">
+      <DependentUpon>EntregaTrabalho.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AreaAlunos\Estagio.xaml.cs">
+      <DependentUpon>Estagio.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AreaAlunos\Eventos.xaml.cs">
+      <DependentUpon>Eventos.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AreaAlunos\Horario.xaml.cs">
+      <DependentUpon>Horario.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AreaAlunos\Notificacao.xaml.cs">
+      <DependentUpon>Notificacao.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AreaDocente\AddEvent.xaml.cs">
+      <DependentUpon>AddEvent.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AreaDocente\AddFile.xaml.cs">
+      <DependentUpon>AddFile.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AreaDocente\AddNotif.xaml.cs">
+      <DependentUpon>AddNotif.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Cursos\EspTecno.xaml.cs">
+      <DependentUpon>EspTecno.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Cursos\Licenciatura.xaml.cs">
+      <DependentUpon>Licenciatura.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Cursos\Mestrado.xaml.cs">
+      <DependentUpon>Mestrado.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Cursos\OutrosCursos.xaml.cs">
+      <DependentUpon>OutrosCursos.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Cursos\PosGraduacao.xaml.cs">
+      <DependentUpon>PosGraduacao.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Detail.xaml.cs">
       <DependentUpon>Detail.xaml</DependentUpon>
     </Compile>
@@ -111,6 +153,90 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Page2.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Cursos\Licenciatura.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Cursos\Mestrado.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Cursos\PosGraduacao.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AreaAlunos\Defesas.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Cursos\EspTecno.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Cursos\OutrosCursos.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AreaDocente\AddNotif.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AreaDocente\AddEvent.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AreaDocente\AddFile.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AreaAlunos\Horario.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AreaAlunos\Eventos.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AreaAlunos\Notificacao.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AreaAlunos\Estagio.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AreaAlunos\EntregaTrabalho.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
