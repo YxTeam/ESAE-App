@@ -5,8 +5,10 @@
              Title="Título da Página 2">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Conteúdo da página 2" />
-            <Entry x:Name="Nome"
+            <Image Source="http://images.static-bluray.com/reviews/8932_1.jpg" Aspect="Fill"/>
+            <Entry x:Name="NumAluno" Placeholder="Nº de Aluno"
+                   HorizontalOptions="FillAndExpand"/>
+            <Entry x:Name="Pass" Placeholder="Password"
                    HorizontalOptions="FillAndExpand"/>
         </StackLayout>
     </ContentPage.Content>

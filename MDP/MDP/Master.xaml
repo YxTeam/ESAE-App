@@ -10,7 +10,6 @@
             <Image Source="http://images.static-bluray.com/reviews/8932_1.jpg" Aspect="Fill" />
             <ListView x:Name="navigationDrawerList"
                       SeparatorVisibility="None"
-                      BackgroundColor="#e8e8e8"
                       ItemSelected="OnMenuItemSelected">
                 <ListView.ItemTemplate>
                     <DataTemplate>
