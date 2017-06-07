@@ -8,10 +8,28 @@
     <ContentPage.Content>
          <StackLayout>
             <Image Source="http://images.static-bluray.com/reviews/8932_1.jpg" Aspect="Fill" />
-            <ListView x:Name="listView" SeparatorVisibility="None">
+            <ListView x:Name="navigationDrawerList"
+                      SeparatorVisibility="None"
+                      BackgroundColor="#e8e8e8">
                 <ListView.ItemTemplate>
                     <DataTemplate>
-                        <ImageCell Text="{Binding Title}" ImageSource="{Binding IconSource}" />
+                        <ViewCell>
+                            <StackLayout VerticalOptions="FillAndExpand"
+                                         Orientation="Horizontal"
+                                         Padding="20,10,0,10"
+                                         Spacing="20">
+
+                                <Image Source="{Binding Icon}"
+                                       WidthRequest="40"
+                                       HeightRequest="40"
+                                       VerticalOptions="Center" />
+
+                                <Label Text="{Binding Title}"
+                                       FontSize="Medium"
+                                       VerticalOptions="Center"
+                                       TextColor="Black"/>
+                            </StackLayout>
+                        </ViewCell>
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>

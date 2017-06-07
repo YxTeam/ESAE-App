@@ -2,9 +2,9 @@
 
 namespace MDP
 {
-    internal class MasterPageItem
+    public class MasterPageItem
     {
-        public string IconSource { get; set; }
+        public string Icon { get; set; }
         public Type TargetType { get; set; }
         public string Title { get; set; }
     }
