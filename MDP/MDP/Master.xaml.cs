@@ -41,10 +41,19 @@ namespace MDP
             menuList.Add(page9);
 
             navigationDrawerList.ItemsSource = menuList;
-
-
         }
-               
+
+        private void OnMenuItemSelected(object sender, SelectedItemChangedEventArgs e)
+        {
+
+            var item = (MasterPageItem)e.SelectedItem;
+            Type page = item.TargetType;
+
+            App.mdp.Detail = new NavigationPage((Page)Activator.CreateInstance(page));
+            //Detail = new NavigationPage((Page)Activator.CreateInstance(page));
+            App.mdp.IsPresented = false;
+        }
+
     }
  
 }
