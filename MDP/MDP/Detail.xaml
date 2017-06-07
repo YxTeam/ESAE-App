@@ -2,7 +2,17 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MDP.Detail"
-             Title="Conteúdo"
-             BackgroundColor="Red">
+             Title="App da ESAE - ISMT" >
+
+    <ContentPage.Content>
+        <StackLayout Padding="5,10">
+            <Image Source="logo_esae.gif" Aspect="AspectFit" />
+            <Label FontSize = "15" FontAttributes="Bold" FontFamily="Verdana" Text="A Escola Superior de Altos Estudos (ESAE) é o Departamento que congrega toda a formação pós-graduada da Instituição: cursos de Pós-Graduação e cursos de 2º Ciclo / Mestrados." />
+            <Label FontSize = "15" FontFamily="Verdana" Text="A ESAE, através da sua equipa e de uma estreita colaboração com as Coordenações dos vários cursos, acompanha a formação dos estudantes:" />
+            <Label FontSize = "15" FontFamily="Verdana" Text="•	Apoiando a sua integração" />
+            <Label FontSize = "15" FontFamily="Verdana" Text="•	Contribuindo para o sucesso das atividades formativas." />
+
+        </StackLayout>
+    </ContentPage.Content>
 
 </ContentPage>

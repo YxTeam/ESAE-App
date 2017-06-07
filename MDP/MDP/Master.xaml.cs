@@ -44,15 +44,5 @@ namespace MDP
         }
                
     }
-    private void btnPage1_Clicked(object sender, EventArgs e)
-    {
-        App.mdp.IsPresented = false;
-        App.mdp.Detail.Navigation.PushAsync(new Page1());
-    }
-
-    private void btnPage2_Clicked(object sender, EventArgs e)
-    {
-        App.mdp.IsPresented = false;
-        App.mdp.Detail.Navigation.PushAsync(new Page2());
-    }
+ 
 }
