@@ -50,7 +50,6 @@ namespace MDP
             Type page = item.TargetType;
 
             App.mdp.Detail = new NavigationPage((Page)Activator.CreateInstance(page));
-            //Detail = new NavigationPage((Page)Activator.CreateInstance(page));
             App.mdp.IsPresented = false;
         }
 
