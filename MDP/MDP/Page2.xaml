@@ -10,6 +10,7 @@
                    HorizontalOptions="FillAndExpand"/>
             <Entry x:Name="Pass" Placeholder="Password"
                    HorizontalOptions="FillAndExpand"/>
+            <Button Text="Login" TextColor="White" BackgroundColor="#e97a24" VerticalOptions="End" HorizontalOptions="Center"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

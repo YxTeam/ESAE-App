@@ -5,13 +5,13 @@
              Title="App da ESAE - ISMT" >
 
     <ContentPage.Content>
-        <StackLayout Padding="5,10">
-            <Image Source="logo_esae.gif" Aspect="AspectFit" />
-            <Label FontSize = "15" FontAttributes="Bold" FontFamily="Verdana" Text="A Escola Superior de Altos Estudos (ESAE) é o Departamento que congrega toda a formação pós-graduada da Instituição: cursos de Pós-Graduação e cursos de 2º Ciclo / Mestrados." />
-            <Label FontSize = "15" FontFamily="Verdana" Text="A ESAE, através da sua equipa e de uma estreita colaboração com as Coordenações dos vários cursos, acompanha a formação dos estudantes:" />
-            <Label FontSize = "15" FontFamily="Verdana" Text="•	Apoiando a sua integração" />
-            <Label FontSize = "15" FontFamily="Verdana" Text="•	Contribuindo para o sucesso das atividades formativas." />
-
+        <StackLayout>
+            <Image Source="http://images.static-bluray.com/reviews/8932_1.jpg" Aspect="Fill" />
+            <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                <Button Text="1" TextColor="White" BackgroundColor="#e97a24" HorizontalOptions="Start" />
+                <Button x:Name="btnLogin" Text="2" TextColor="White" BackgroundColor="#e97a24" HorizontalOptions="Center" Clicked="btnLogin_Clicked" />
+                <Button Text="3" TextColor="White" BackgroundColor="#e97a24" HorizontalOptions="End" />
+            </StackLayout>
         </StackLayout>
     </ContentPage.Content>
 

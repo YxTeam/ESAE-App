@@ -17,5 +17,11 @@ namespace MDP
         {
             InitializeComponent();
         }
+
+        private void btnLogin_Clicked(object sender, EventArgs e)
+        {
+            Page2 login = new Page2(); 
+            Navigation.PushModalAsync(login);
+        }
     }
 }
