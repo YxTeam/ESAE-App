@@ -7,7 +7,7 @@
 
     <ContentPage.Content>
          <StackLayout>
-            <Image Source="http://images.static-bluray.com/reviews/8932_1.jpg" Aspect="Fill" />
+            <Image Source="test.jpg" Aspect="AspectFit" />
             <ListView x:Name="navigationDrawerList"
                       SeparatorVisibility="None"
                       ItemSelected="OnMenuItemSelected">

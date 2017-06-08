@@ -6,11 +6,11 @@
 
     <ContentPage.Content>
         <StackLayout>
-            <Image Source="http://images.static-bluray.com/reviews/8932_1.jpg" Aspect="Fill" />
+            <Image Source="test.jpg" Aspect="Fill" />
             <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
-                <Button Text="1" TextColor="White" BackgroundColor="#e97a24" HorizontalOptions="Start" />
-                <Button x:Name="btnLogin" Text="2" TextColor="White" BackgroundColor="#e97a24" HorizontalOptions="Center" Clicked="btnLogin_Clicked" />
-                <Button Text="3" TextColor="White" BackgroundColor="#e97a24" HorizontalOptions="End" />
+                <Button Text="Cursos" TextColor="White" BackgroundColor="#e97a24" HorizontalOptions="Start" />
+                <Button x:Name="btnLogin" Text="Entrar" TextColor="White" BackgroundColor="#e97a24" HorizontalOptions="Center" Clicked="btnLogin_Clicked" />
+                <Button Text="Contactos" TextColor="White" BackgroundColor="#e97a24" HorizontalOptions="End" />
             </StackLayout>
         </StackLayout>
     </ContentPage.Content>

@@ -5,10 +5,10 @@
              Title="Título da Página 1">
     
     <ContentPage.Content>
-        <StackLayout>
-            
-            <Label Text="Conteúdo da página 1" />
-            <Image Source="IMG_5758.jpg" VerticalOptions="End" />
+        <StackLayout BackgroundColor="#006660">
+
+            <Image Source="logoe.png" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" />
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -2,10 +2,10 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MDP.Page2"
-             Title="Título da Página 2">
+             Title="Login">
     <ContentPage.Content>
         <StackLayout>
-            <Image Source="http://images.static-bluray.com/reviews/8932_1.jpg" Aspect="Fill"/>
+            <Image Source="test.jpg" Aspect="Fill"/>
             <Entry x:Name="NumAluno" Placeholder="Nº de Aluno"
                    HorizontalOptions="FillAndExpand"/>
             <Entry x:Name="Pass" Placeholder="Password"
