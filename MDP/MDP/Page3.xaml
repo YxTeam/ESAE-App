@@ -5,7 +5,7 @@
              Title="Contactos">
     <ContentPage.Content>
         <StackLayout>
-            <Image Source="ESAE_cor.jpg" Aspect="Fill"/>
+            <Image Source="ESAE_cor.png"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

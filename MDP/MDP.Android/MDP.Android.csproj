@@ -294,9 +294,6 @@
     <AndroidResource Include="Resources\drawable-xxhdpi\ic_event_white.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\ESAE-cor.jpg" />
-  </ItemGroup>
-  <ItemGroup>
     <AndroidResource Include="Resources\drawable-xxhdpi\ESAE_cor.jpg" />
   </ItemGroup>
   <ItemGroup>
