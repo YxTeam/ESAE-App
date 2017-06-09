@@ -20,7 +20,7 @@ namespace MDP
 
             menuList = new List<MasterPageItem>();
 
-            var page1 = new MasterPageItem() { Title = "Inicio", Icon = "ic_home.png", TargetType = typeof(Page) };
+            var page1 = new MasterPageItem() { Title = "Inicio", Icon = "ic_home.png", TargetType = typeof(Page4) };
             var page2 = new MasterPageItem() { Title = "Horários", Icon = "ic_date_black.png", TargetType = typeof(Page1) };
             var page3 = new MasterPageItem() { Title = "Avisos", Icon = "ic_info_black.png", TargetType = typeof(Page2) };
             var page4 = new MasterPageItem() { Title = "Eventos", Icon = "ic_event_black.png", TargetType = typeof(Page) };
