@@ -20,15 +20,14 @@ namespace MDP
 
             menuList = new List<MasterPageItem>();
 
-            var page1 = new MasterPageItem() { Title = "Item 1", Icon = "contacts.png", TargetType = typeof(Page) };
-            var page2 = new MasterPageItem() { Title = "Item 2", Icon = "todo.png", TargetType = typeof(Page1) };
-            var page3 = new MasterPageItem() { Title = "Item 3", Icon = "reminders.png", TargetType = typeof(Page2) };
-            var page4 = new MasterPageItem() { Title = "Item 4", Icon = "contacts.png", TargetType = typeof(Page) };
-            var page5 = new MasterPageItem() { Title = "Item 5", Icon = "todo.png", TargetType = typeof(Page1) };
-            var page6 = new MasterPageItem() { Title = "Item 6", Icon = "reminders.png", TargetType = typeof(Page2) };
-            var page7 = new MasterPageItem() { Title = "Item 7", Icon = "contacts.png", TargetType = typeof(Page) };
-            var page8 = new MasterPageItem() { Title = "Item 8", Icon = "todo.png", TargetType = typeof(Page1) };
-            var page9 = new MasterPageItem() { Title = "Item 9", Icon = "reminders.png", TargetType = typeof(Page2) };
+            var page1 = new MasterPageItem() { Title = "Inicio", Icon = "ic_home.png", TargetType = typeof(Page) };
+            var page2 = new MasterPageItem() { Title = "Horários", Icon = "ic_date_black.png", TargetType = typeof(Page1) };
+            var page3 = new MasterPageItem() { Title = "Avisos", Icon = "ic_info_black.png", TargetType = typeof(Page2) };
+            var page4 = new MasterPageItem() { Title = "Eventos", Icon = "ic_event_black.png", TargetType = typeof(Page) };
+            var page5 = new MasterPageItem() { Title = "Avaliação", Icon = "ic_school.png", TargetType = typeof(Page1) };
+            var page6 = new MasterPageItem() { Title = "Propinas", Icon = "ic_payment.png", TargetType = typeof(Page2) };
+            var page7 = new MasterPageItem() { Title = "Documentos", Icon = "ic_description.png", TargetType = typeof(Page) };
+            var page8 = new MasterPageItem() { Title = "Contactos", Icon = "ic_contacts_black.png", TargetType = typeof(Page3) };
 
             menuList.Add(page1);
             menuList.Add(page2);
@@ -38,7 +37,6 @@ namespace MDP
             menuList.Add(page6);
             menuList.Add(page7);
             menuList.Add(page8);
-            menuList.Add(page9);
 
             navigationDrawerList.ItemsSource = menuList;
         }

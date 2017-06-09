@@ -22,5 +22,10 @@ namespace MDP
         {
             App.mdp.Detail.Navigation.PushAsync(new Page2());
         }
+
+        private void btnContact_Clicked(object sender, EventArgs e)
+        {
+            App.mdp.Detail.Navigation.PushAsync(new Page3());
+        }
     }
 }

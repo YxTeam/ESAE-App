@@ -6,11 +6,22 @@
 
     <ContentPage.Content>
         <StackLayout>
-            <Image Source="test.jpg" Aspect="Fill" />
+            <StackLayout>
+                <Image Source="test.jpg" Aspect="Fill" />
+            </StackLayout>
             <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
-                <Button Text="Cursos" TextColor="White" BackgroundColor="#e97a24" HorizontalOptions="Start" />
-                <Button x:Name="btnLogin" Text="Entrar" TextColor="White" BackgroundColor="#e97a24" HorizontalOptions="Center" Clicked="btnLogin_Clicked" />
-                <Button Text="Contactos" TextColor="White" BackgroundColor="#e97a24" HorizontalOptions="End" />
+                <StackLayout Orientation="Vertical" HorizontalOptions="Start">
+                    <Button x:Name="btnCursos" Image="ic_class.png" BackgroundColor="#e97a24" HeightRequest="70" WidthRequest="70" />
+                    <Label Text="Cursos" TextColor="#e97a24"/>
+                </StackLayout>
+                <StackLayout Orientation="Vertical" HorizontalOptions="Center">
+                    <Button x:Name="btnLogin" Image="ic_person.png" BackgroundColor="#e97a24" HeightRequest="70" WidthRequest="70" Clicked="btnLogin_Clicked" />
+                    <Label Text="Entrar" TextColor="#e97a24"/>
+                </StackLayout>
+                <StackLayout Orientation="Vertical" HorizontalOptions="End">
+                    <Button x:Name="btnContact" Image="ic_contacts_white.png" BackgroundColor="#e97a24" HeightRequest="70" WidthRequest="70" Clicked="btnContact_Clicked"/>
+                    <Label Text="Contactos" TextColor="#e97a24"/>
+                </StackLayout>
             </StackLayout>
         </StackLayout>
     </ContentPage.Content>
