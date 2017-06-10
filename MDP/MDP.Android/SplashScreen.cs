@@ -12,7 +12,7 @@ using Android.Widget;
 
 namespace MDP.Droid
 {
-    [Activity(Label = "SplashScreen",
+    [Activity(Label = "ESAE - ISMT",
         Icon = "@drawable/icon",
         Theme = "@style/splashscreen",
         MainLauncher = true,
