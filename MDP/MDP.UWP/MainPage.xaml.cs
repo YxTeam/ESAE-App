@@ -22,6 +22,8 @@ namespace MDP.UWP
             this.InitializeComponent();
 
             LoadApplication(new MDP.App());
+            Xamarin.FormsMaps.Init("INSERT_AUTHENTICATION_TOKEN_HERE");
+
         }
     }
 }

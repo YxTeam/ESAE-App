@@ -23,7 +23,7 @@ namespace MDP
             var page1 = new MasterPageItem() { Title = "Inicio", Icon = "ic_home.png", TargetType = typeof(Page4) };
             var page2 = new MasterPageItem() { Title = "Horários", Icon = "ic_date_black.png", TargetType = typeof(Page3) };
             var page3 = new MasterPageItem() { Title = "Avisos", Icon = "ic_info_black.png", TargetType = typeof(Page2) };
-            var page4 = new MasterPageItem() { Title = "Eventos", Icon = "ic_event_black.png", TargetType = typeof(Page) };
+            var page4 = new MasterPageItem() { Title = "Eventos", Icon = "ic_event_black.png", TargetType = typeof(TabbedPage1) };
             var page5 = new MasterPageItem() { Title = "Avaliação", Icon = "ic_school.png", TargetType = typeof(Page3) };
             var page6 = new MasterPageItem() { Title = "Propinas", Icon = "ic_payment.png", TargetType = typeof(Page2) };
             var page7 = new MasterPageItem() { Title = "Documentos", Icon = "ic_description.png", TargetType = typeof(Page) };
