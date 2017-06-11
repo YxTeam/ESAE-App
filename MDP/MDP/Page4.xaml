@@ -1,24 +1,25 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="MDP.Page4">
+             x:Class="MDP.Page4"
+             Title="Principal">
     <ContentPage.Content>
         <StackLayout>
             <StackLayout>
-                <Image Source="test.jpg" Aspect="Fill" />
+                <Image Source="man.png" Aspect="AspectFill" />
             </StackLayout>
-            <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+            <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" Margin="0, 10, 0, 0">
                 <StackLayout Orientation="Vertical" HorizontalOptions="Start">
                     <Button x:Name="btnCursos" Image="ic_date_white.png" BackgroundColor="#e97a24" HeightRequest="70" WidthRequest="70" />
-                    <Label Text="Horário" TextColor="#e97a24"/>
+                    <Label Text="Horário" TextColor="#e97a24" Margin="12, 0, 0, 0"/>
                 </StackLayout>
-                <StackLayout Orientation="Vertical" HorizontalOptions="Center">
-                    <Button x:Name="btnLogin" Image="ic_info_black.png" BackgroundColor="#e97a24" HeightRequest="70" WidthRequest="70" />
-                    <Label Text="Avisos" TextColor="#e97a24"/>
+                <StackLayout Orientation="Vertical" HorizontalOptions="Center" Margin="40, 0, 40, 0">
+                    <Button x:Name="btnLogin" Image="ic_info_white.png" BackgroundColor="#e97a24" HeightRequest="70" WidthRequest="70" />
+                    <Label Text="Avisos" TextColor="#e97a24" Margin="15, 0, 0, 0"/>
                 </StackLayout>
                 <StackLayout Orientation="Vertical" HorizontalOptions="End">
                     <Button x:Name="btnContact" Image="ic_event_white.png" BackgroundColor="#e97a24" HeightRequest="70" WidthRequest="70" />
-                    <Label Text="Eventos" TextColor="#e97a24"/>
+                    <Label Text="Eventos" TextColor="#e97a24" Margin="10, 0, 0, 0"/>
                 </StackLayout>
             </StackLayout>
         </StackLayout>

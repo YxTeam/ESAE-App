@@ -7,32 +7,36 @@
 
     <ContentPage.Content>
          <StackLayout>
-            <Image Source="test.jpg" Aspect="AspectFit" />
-            <ListView x:Name="navigationDrawerList"
-                      SeparatorVisibility="None"
-                      ItemSelected="OnMenuItemSelected">
-                <ListView.ItemTemplate>
-                    <DataTemplate>
-                        <ViewCell>
-                            <StackLayout VerticalOptions="FillAndExpand"
-                                         Orientation="Horizontal"
-                                         Padding="20,10,0,10"
-                                         Spacing="20">
+            <StackLayout>
+                <Image Source="test.jpg" Aspect="AspectFit" />
+            </StackLayout>
+            <StackLayout>
+                <ListView x:Name="navigationDrawerList"
+                          SeparatorVisibility="None"
+                          ItemSelected="OnMenuItemSelected">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <StackLayout VerticalOptions="FillAndExpand"
+                                             Orientation="Horizontal"
+                                             Padding="20,10,0,10"
+                                             Spacing="20">
 
-                                <Image Source="{Binding Icon}"
-                                       WidthRequest="40"
-                                       HeightRequest="40"
-                                       VerticalOptions="Center" />
+                                    <Image Source="{Binding Icon}"
+                                           WidthRequest="40"
+                                           HeightRequest="40"
+                                           VerticalOptions="Center" />
 
-                                <Label Text="{Binding Title}"
-                                       FontSize="Medium"
-                                       VerticalOptions="Center"
-                                       TextColor="Black"/>
-                            </StackLayout>
-                        </ViewCell>
-                    </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>
+                                    <Label Text="{Binding Title}"
+                                           FontSize="Medium"
+                                           VerticalOptions="Center"
+                                           TextColor="Black"/>
+                                </StackLayout>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </StackLayout>
         </StackLayout>
     </ContentPage.Content>
     
