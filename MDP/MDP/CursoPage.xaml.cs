@@ -10,9 +10,9 @@ using Xamarin.Forms.Xaml;
 namespace MDP
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class TabbedPage1 : TabbedPage
+    public partial class CursoPage : TabbedPage
     {
-        public TabbedPage1()
+        public CursoPage()
         {
             InitializeComponent();
         }

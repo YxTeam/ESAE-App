@@ -6,10 +6,23 @@
              BackgroundColor="White">
 
     <ContentPage.Content>
-         <StackLayout>
-            <StackLayout>
-                <Image Source="test.jpg" Aspect="AspectFit" />
+        <StackLayout Orientation="Vertical">
+            <StackLayout BackgroundColor="#006660"
+                     HeightRequest="200">
+                <StackLayout VerticalOptions="Center">
+                    <Image Source="circletest.png" HorizontalOptions="Center" WidthRequest="70" HeightRequest="70"/>
+                    <Label Text="Filipe Silva" TextColor="White" HorizontalOptions="Center" VerticalOptions="Center"/>
+                    <Label Text="10238" TextColor="White" FontSize="Small" VerticalOptions="Center" HorizontalOptions="Center"/>
+                </StackLayout>
+                <StackLayout>
+                    <Button Text="Logout" TextColor="White" BackgroundColor="#e97a24" HorizontalOptions="Start" VerticalOptions="End"/>
+                </StackLayout>
             </StackLayout>
+            <!--
+                <StackLayout>
+                    <Image Source="test.jpg" Aspect="AspectFit" />
+                </StackLayout>
+            -->
             <StackLayout>
                 <ListView x:Name="navigationDrawerList"
                           SeparatorVisibility="None"
@@ -39,16 +52,4 @@
             </StackLayout>
         </StackLayout>
     </ContentPage.Content>
-    
-    <!-- menu lateral 
-    <StackLayout>
-        <Image Source="http://images.static-bluray.com/reviews/8932_1.jpg" Aspect="AspectFill" />
-        <Button x:Name="btnPage1"
-                Text="Página 1"
-                Clicked="btnPage1_Clicked"/>
-        <Button x:Name="btnPage2"
-                Text="Página 2"
-                Clicked="btnPage2_Clicked"/>
-    </StackLayout> -->
-    
 </ContentPage>

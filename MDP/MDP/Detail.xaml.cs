@@ -27,5 +27,10 @@ namespace MDP
         {
             App.mdp.Detail.Navigation.PushAsync(new Page3());
         }
+
+        private void btnCursos_Clicked(object sender, EventArgs e)
+        {
+            App.mdp.Detail.Navigation.PushAsync(new CursoPage());
+        }
     }
 }
