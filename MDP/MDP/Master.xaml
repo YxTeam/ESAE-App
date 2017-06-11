@@ -3,11 +3,12 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MDP.Master"
              Title="Menu"
-             BackgroundColor="White">
+             BackgroundColor="White"
+             BackgroundImage="kelback">
 
     <ContentPage.Content>
         <StackLayout Orientation="Vertical">
-            <StackLayout BackgroundColor="#006660"
+            <StackLayout
                      HeightRequest="200">
                 <StackLayout VerticalOptions="Center">
                     <Image Source="circletest.png" HorizontalOptions="Center" WidthRequest="70" HeightRequest="70"/>
@@ -23,7 +24,7 @@
                     <Image Source="test.jpg" Aspect="AspectFit" />
                 </StackLayout>
             -->
-            <StackLayout>
+            <StackLayout BackgroundColor="White">
                 <ListView x:Name="navigationDrawerList"
                           SeparatorVisibility="None"
                           ItemSelected="OnMenuItemSelected">

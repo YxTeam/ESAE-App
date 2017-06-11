@@ -16,7 +16,6 @@ namespace MDP.Droid
         {
             TabLayoutResource = Resource.Layout.Tabbar;
             ToolbarResource = Resource.Layout.Toolbar;
-            Xamarin.FormsMaps.Init(this, bundle);
 
 
             base.OnCreate(bundle);
