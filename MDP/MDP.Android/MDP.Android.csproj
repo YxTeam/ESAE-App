@@ -353,10 +353,10 @@
     <AndroidResource Include="Resources\drawable-xxhdpi\ic_info_white.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\kelback.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\circletest.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xxhdpi\circletest.png" />
+    <AndroidResource Include="Resources\drawable\kelback.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
