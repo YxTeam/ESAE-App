@@ -4,7 +4,27 @@
              x:Class="MDP.AreaAlunos.Eventos">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin Forms!" />
+            <ListView x:Name="exemplo">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <ViewCell.View>
+                                <StackLayout Orientation="Vertical">
+                                    <StackLayout Orientation="Horizontal" HorizontalOptions="Start">
+                                        <Label Text="{Binding dia}" />
+                                        <Label Text="{Binding hora}" />
+                                    </StackLayout>
+                                    <StackLayout Orientation="Horizontal" HorizontalOptions="End">
+                                        <Label Text="{Binding assunto}" />
+                                        <Label Text="{Binding local}" />
+                                    </StackLayout>
+                                    <Label Text="..." />
+                                </StackLayout>
+                            </ViewCell.View>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

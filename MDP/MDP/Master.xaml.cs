@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -21,9 +22,9 @@ namespace MDP
             menuList = new List<MasterPageItem>();
 
             var page1 = new MasterPageItem() { Title = "Inicio", Icon = "ic_home.png", TargetType = typeof(Page4) };
-            var page2 = new MasterPageItem() { Title = "Horários", Icon = "ic_date_black.png", TargetType = typeof(Page3) };
-            var page3 = new MasterPageItem() { Title = "Avisos", Icon = "ic_info_black.png", TargetType = typeof(Page2) };
-            var page4 = new MasterPageItem() { Title = "Eventos", Icon = "ic_event_black.png", TargetType = typeof(CursoPage) };
+            var page2 = new MasterPageItem() { Title = "Horários", Icon = "ic_date_black.png", TargetType = typeof(AreaAlunos.Horario) };
+            var page3 = new MasterPageItem() { Title = "Avisos", Icon = "ic_info_black.png", TargetType = typeof(AreaAlunos.Avisos) };
+            var page4 = new MasterPageItem() { Title = "Eventos", Icon = "ic_event_black.png", TargetType = typeof(AreaAlunos.Eventos) };
             var page5 = new MasterPageItem() { Title = "Avaliação", Icon = "ic_school.png", TargetType = typeof(Page3) };
             var page6 = new MasterPageItem() { Title = "Propinas", Icon = "ic_payment.png", TargetType = typeof(Page2) };
             var page7 = new MasterPageItem() { Title = "Documentos", Icon = "ic_description.png", TargetType = typeof(Page) };
@@ -41,12 +42,12 @@ namespace MDP
             navigationDrawerList.ItemsSource = menuList;
         }
 
-        private void OnMenuItemSelected(object sender, SelectedItemChangedEventArgs e)
+        public void OnMenuItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
 
             var item = (MasterPageItem)e.SelectedItem;
             Type page = item.TargetType;
-
+            
             App.mdp.Detail = new NavigationPage((Page)Activator.CreateInstance(page));
             App.mdp.IsPresented = false;
         }

@@ -6,7 +6,23 @@
              BackgroundColor="Red">
     <ContentPage.Content>
         <StackLayout>
-            
+            <ListView x:Name="exemplo">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <ViewCell.View>
+                                <StackLayout Orientation="Vertical">
+                                    <StackLayout Orientation="Horizontal">
+                                        <Label Text="{Binding nome}" />
+                                        <Label Text="{Binding anos}" />
+                                    </StackLayout>
+                                    <Label Text="..." />
+                                </StackLayout>
+                            </ViewCell.View>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

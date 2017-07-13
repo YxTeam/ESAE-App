@@ -35,17 +35,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="API\WS.cs" />
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="AreaAlunos\Defesas.xaml.cs">
-      <DependentUpon>Defesas.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="AreaAlunos\EntregaTrabalho.xaml.cs">
-      <DependentUpon>EntregaTrabalho.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="AreaAlunos\Estagio.xaml.cs">
-      <DependentUpon>Estagio.xaml</DependentUpon>
+    <Compile Include="AreaAlunos\Avisos.xaml.cs">
+      <DependentUpon>Avisos.xaml</DependentUpon>
     </Compile>
     <Compile Include="AreaAlunos\Eventos.xaml.cs">
       <DependentUpon>Eventos.xaml</DependentUpon>
@@ -53,32 +48,15 @@
     <Compile Include="AreaAlunos\Horario.xaml.cs">
       <DependentUpon>Horario.xaml</DependentUpon>
     </Compile>
-    <Compile Include="AreaAlunos\Notificacao.xaml.cs">
-      <DependentUpon>Notificacao.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="AreaDocente\AddEvent.xaml.cs">
-      <DependentUpon>AddEvent.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="AreaDocente\AddFile.xaml.cs">
-      <DependentUpon>AddFile.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="AreaDocente\AddNotif.xaml.cs">
-      <DependentUpon>AddNotif.xaml</DependentUpon>
-    </Compile>
+    <Compile Include="Controllers\AvisoController.cs" />
+    <Compile Include="Controllers\CursoController.cs" />
+    <Compile Include="Controllers\EventoController.cs" />
+    <Compile Include="Controllers\HorarioController.cs" />
     <Compile Include="CursoPage.xaml.cs">
       <DependentUpon>CursoPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Cursos\EspTecno.xaml.cs">
-      <DependentUpon>EspTecno.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Cursos\Licenciatura.xaml.cs">
-      <DependentUpon>Licenciatura.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Cursos\Mestrado.xaml.cs">
       <DependentUpon>Mestrado.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Cursos\OutrosCursos.xaml.cs">
-      <DependentUpon>OutrosCursos.xaml</DependentUpon>
     </Compile>
     <Compile Include="Cursos\PosGraduacao.xaml.cs">
       <DependentUpon>PosGraduacao.xaml</DependentUpon>
@@ -93,6 +71,10 @@
       <DependentUpon>Master.xaml</DependentUpon>
     </Compile>
     <Compile Include="MasterPageItem.cs" />
+    <Compile Include="Models\Aviso.cs" />
+    <Compile Include="Models\Curso.cs" />
+    <Compile Include="Models\Evento.cs" />
+    <Compile Include="Models\Horario.cs" />
     <Compile Include="Page2.xaml.cs">
       <DependentUpon>Page2.xaml</DependentUpon>
     </Compile>
@@ -133,12 +115,6 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Cursos\Licenciatura.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
     <EmbeddedResource Include="Cursos\Mestrado.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
@@ -151,42 +127,6 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="AreaAlunos\Defesas.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Cursos\EspTecno.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Cursos\OutrosCursos.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="AreaDocente\AddNotif.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="AreaDocente\AddEvent.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="AreaDocente\AddFile.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
     <EmbeddedResource Include="AreaAlunos\Horario.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
@@ -194,24 +134,6 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="AreaAlunos\Eventos.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="AreaAlunos\Notificacao.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="AreaAlunos\Estagio.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="AreaAlunos\EntregaTrabalho.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
@@ -236,7 +158,7 @@
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Newtonsoft.Json.10.0.2\lib\portable-net45+win8+wpa81+wp8\Newtonsoft.Json.dll</HintPath>
+      <HintPath>..\..\packages\Newtonsoft.Json.10.0.3\lib\portable-net45+win8+wp8+wpa81\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="Xamarin.Forms.Core, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Xamarin.Forms.2.3.4.247\lib\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.Core.dll</HintPath>
@@ -250,6 +172,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AreaAlunos\Avisos.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <Import Project="..\..\packages\Xamarin.Forms.2.3.4.247\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets" Condition="Exists('..\..\packages\Xamarin.Forms.2.3.4.247\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets')" />

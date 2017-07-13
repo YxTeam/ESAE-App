@@ -16,5 +16,10 @@ namespace MDP
         {
             InitializeComponent();
         }
+
+        private void btnhorario_Clicked(object sender, EventArgs e)
+        {
+            //App.mdp.Detail.Navigation.PushAsync(new AreaAlunos.Horario());
+        }
     }
 }
