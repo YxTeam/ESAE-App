@@ -58,6 +58,9 @@
     <Compile Include="Cursos\Mestrado.xaml.cs">
       <DependentUpon>Mestrado.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Cursos\Outro.xaml.cs">
+      <DependentUpon>Outro.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Cursos\PosGraduacao.xaml.cs">
       <DependentUpon>PosGraduacao.xaml</DependentUpon>
     </Compile>
@@ -175,6 +178,12 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="AreaAlunos\Avisos.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Cursos\Outro.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

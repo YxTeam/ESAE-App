@@ -23,7 +23,7 @@ namespace MDP.Cursos
             InitializeComponent();
 
             cursos = new CursoController();
-            exemplo.ItemsSource = cursos.ListaCursos; //adiciona os objetos à listview
+            exemplo.ItemsSource = cursos.getCursosByType("Mestrado"); //adiciona os objetos à listview
         }
     }
 }

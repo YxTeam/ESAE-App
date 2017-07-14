@@ -14,16 +14,16 @@ using MDP.Controller;
 namespace MDP.Cursos
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class PosGraduacao : ContentPage
+    public partial class Outro : ContentPage
     {
         CursoController cursos;
 
-        public PosGraduacao()
+        public Outro()
         {
             InitializeComponent();
 
             cursos = new CursoController();
-            exemplo.ItemsSource = cursos.getCursosByType("Pós-Graduação"); //adiciona os objetos à listview
+            exemplo.ItemsSource = cursos.getCursosByType("Outro"); //adiciona os objetos à listview
         }
     }
 }

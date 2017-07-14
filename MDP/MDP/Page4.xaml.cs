@@ -17,9 +17,19 @@ namespace MDP
             InitializeComponent();
         }
 
-        private void btnhorario_Clicked(object sender, EventArgs e)
+        private void btnHorario_Clicked(object sender, EventArgs e)
         {
-            //App.mdp.Detail.Navigation.PushAsync(new AreaAlunos.Horario());
+            App.mdp.Detail.Navigation.PushAsync(new AreaAlunos.Horario());
+        }
+
+        private void btnAviso_Clicked(object sender, EventArgs e)
+        {
+            App.mdp.Detail.Navigation.PushAsync(new AreaAlunos.Avisos());
+        }
+
+        private void btnEvento_Clicked(object sender, EventArgs e)
+        {
+            App.mdp.Detail.Navigation.PushAsync(new AreaAlunos.Eventos());
         }
     }
 }
