@@ -24,6 +24,10 @@ namespace MDP.AreaAlunos
 
             avisos = new AvisoController();
             exemplo.ItemsSource = avisos.ListaAvisos; //adiciona os objetos à listview
+
+            exemplo.ItemSelected += (sender, e) => {
+                ((ListView)sender).SelectedItem = null;
+            };
         }
 	}
 }

@@ -13,5 +13,9 @@ namespace MDP.Models
         public int anos { get; set; }
         public string coordenador { get; set; }
         public string tipo { get; set; }
+        public List<Aluno> alunos { get; set; }
+        public List<Disciplina> disciplinas { get; set; }
+        public List<Aviso> avisos { get; set; }
+        public List<Evento> eventos { get; set; }
     }
 }

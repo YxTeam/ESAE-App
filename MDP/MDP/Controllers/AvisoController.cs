@@ -19,7 +19,7 @@ namespace MDP.Controllers
         public AvisoController()
         {
             servidor = new WS();
-            ListaAvisos = JsonConvert.DeserializeObject<List<Aviso>>(servidor.PedidoServidor("http://10.0.2.2/esae/public/api/avisos").ReadLine());
+            ListaAvisos = JsonConvert.DeserializeObject<List<Aviso>>(servidor.PedidoServidor("http://myesae.x10host.com/api/avisos").ReadLine());
         }
 
         public List<Aviso> getAvisosById(int _id)

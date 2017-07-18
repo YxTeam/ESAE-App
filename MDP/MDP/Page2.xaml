@@ -15,7 +15,7 @@
                     <Entry x:Name="Pass" Placeholder="Password"
                            HorizontalOptions="FillAndExpand"/>
                 </StackLayout>
-                <Button Text="Login" TextColor="White" BackgroundColor="#e97a24" VerticalOptions="End" HorizontalOptions="Center"/>
+                <Button x:Name="btnEntrar" Text="Login" TextColor="White" BackgroundColor="#e97a24" VerticalOptions="End" HorizontalOptions="Center" Clicked="btnEntrar_Clicked"/>
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>

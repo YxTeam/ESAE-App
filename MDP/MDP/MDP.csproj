@@ -42,16 +42,28 @@
     <Compile Include="AreaAlunos\Avisos.xaml.cs">
       <DependentUpon>Avisos.xaml</DependentUpon>
     </Compile>
+    <Compile Include="AreaAlunos\Documentos.xaml.cs">
+      <DependentUpon>Documentos.xaml</DependentUpon>
+    </Compile>
     <Compile Include="AreaAlunos\Eventos.xaml.cs">
       <DependentUpon>Eventos.xaml</DependentUpon>
     </Compile>
     <Compile Include="AreaAlunos\Horario.xaml.cs">
       <DependentUpon>Horario.xaml</DependentUpon>
     </Compile>
+    <Compile Include="AreaAlunos\Notas.xaml.cs">
+      <DependentUpon>Notas.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AreaAlunos\Propinas.xaml.cs">
+      <DependentUpon>Propinas.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\AlunoController.cs" />
     <Compile Include="Controllers\AvisoController.cs" />
     <Compile Include="Controllers\CursoController.cs" />
+    <Compile Include="Controllers\DocumentoController.cs" />
     <Compile Include="Controllers\EventoController.cs" />
     <Compile Include="Controllers\HorarioController.cs" />
+    <Compile Include="Controllers\PropinaController.cs" />
     <Compile Include="CursoPage.xaml.cs">
       <DependentUpon>CursoPage.xaml</DependentUpon>
     </Compile>
@@ -67,6 +79,27 @@
     <Compile Include="Detail.xaml.cs">
       <DependentUpon>Detail.xaml</DependentUpon>
     </Compile>
+    <Compile Include="DocumentoPage.xaml.cs">
+      <DependentUpon>DocumentoPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Documentos\Boletins.xaml.cs">
+      <DependentUpon>Boletins.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Documentos\Capas.xaml.cs">
+      <DependentUpon>Capas.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Documentos\Criterios.xaml.cs">
+      <DependentUpon>Criterios.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Documentos\Entregas.xaml.cs">
+      <DependentUpon>Entregas.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Documentos\Estagios.xaml.cs">
+      <DependentUpon>Estagios.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Documentos\Requerimentos.xaml.cs">
+      <DependentUpon>Requerimentos.xaml</DependentUpon>
+    </Compile>
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
@@ -74,10 +107,15 @@
       <DependentUpon>Master.xaml</DependentUpon>
     </Compile>
     <Compile Include="MasterPageItem.cs" />
+    <Compile Include="Models\Aluno.cs" />
     <Compile Include="Models\Aviso.cs" />
     <Compile Include="Models\Curso.cs" />
+    <Compile Include="Models\Disciplina.cs" />
+    <Compile Include="Models\Documento.cs" />
     <Compile Include="Models\Evento.cs" />
     <Compile Include="Models\Horario.cs" />
+    <Compile Include="Models\Nota.cs" />
+    <Compile Include="Models\Propina.cs" />
     <Compile Include="Page2.xaml.cs">
       <DependentUpon>Page2.xaml</DependentUpon>
     </Compile>
@@ -184,6 +222,66 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Cursos\Outro.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AreaAlunos\Propinas.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Documentos\Criterios.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Documentos\Boletins.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Documentos\Capas.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Documentos\Entregas.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Documentos\Estagios.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Documentos\Requerimentos.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DocumentoPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AreaAlunos\Documentos.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AreaAlunos\Notas.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

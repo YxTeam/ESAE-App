@@ -25,9 +25,9 @@ namespace MDP
             var page2 = new MasterPageItem() { Title = "Horários", Icon = "ic_date_black.png", TargetType = typeof(AreaAlunos.Horario) };
             var page3 = new MasterPageItem() { Title = "Avisos", Icon = "ic_info_black.png", TargetType = typeof(AreaAlunos.Avisos) };
             var page4 = new MasterPageItem() { Title = "Eventos", Icon = "ic_event_black.png", TargetType = typeof(AreaAlunos.Eventos) };
-            var page5 = new MasterPageItem() { Title = "Avaliação", Icon = "ic_school.png", TargetType = typeof(Page3) };
-            var page6 = new MasterPageItem() { Title = "Propinas", Icon = "ic_payment.png", TargetType = typeof(Page2) };
-            var page7 = new MasterPageItem() { Title = "Documentos", Icon = "ic_description.png", TargetType = typeof(Page) };
+            var page5 = new MasterPageItem() { Title = "Avaliação", Icon = "ic_school.png", TargetType = typeof(AreaAlunos.Notas) };
+            var page6 = new MasterPageItem() { Title = "Propinas", Icon = "ic_payment.png", TargetType = typeof(AreaAlunos.Propinas) };
+            var page7 = new MasterPageItem() { Title = "Documentos", Icon = "ic_description.png", TargetType = typeof(AreaAlunos.Documentos) };
             var page8 = new MasterPageItem() { Title = "Contactos", Icon = "ic_contacts_black.png", TargetType = typeof(Page3) };
 
             menuList.Add(page1);

@@ -11,5 +11,7 @@ namespace MDP.Models
         public int id { get; set; }
         public string assunto { get; set; }
         public string descricao { get; set; }
+        public List<Disciplina> disciplinas { get; set; }
+        public List<Curso> cursos { get; set; }
     }
 }

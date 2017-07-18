@@ -19,7 +19,7 @@ namespace MDP.Controllers
         public EventoController()
         {
             servidor = new WS();
-            ListaEventos = JsonConvert.DeserializeObject<List<Evento>>(servidor.PedidoServidor("http://10.0.2.2/esae/public/api/eventos").ReadLine());
+            ListaEventos = JsonConvert.DeserializeObject<List<Evento>>(servidor.PedidoServidor("http://myesae.x10host.com/api/eventos").ReadLine());
         }
     }
 }

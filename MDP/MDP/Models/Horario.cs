@@ -10,8 +10,9 @@ namespace MDP.Models
     {
         public int id { get; set; }
         public string dia { get; set; }
-        public string hora { get; set; }
-        public string duracao { get; set; }
+        public string hora_inicio { get; set; }
+        public string hora_fim { get; set; }
         public string sala { get; set; }
+        public List<Disciplina> disciplinas { get; set; }
     }
 }

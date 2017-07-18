@@ -6,17 +6,20 @@
     
     <ContentPage.Content>
         <StackLayout>
-            <ListView x:Name="exemplo">
+            <ListView x:Name="exemplo" RowHeight="200">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
                             <ViewCell.View>
-                                <StackLayout Orientation="Vertical">
-                                    <StackLayout Orientation="Horizontal" HorizontalOptions="Start">
-                                        <Label Text="dia" />
+                                <StackLayout VerticalOptions="FillAndExpand" Orientation="Vertical">
+                                    <StackLayout Orientation="Horizontal">
+                                        <Label Text="Assunto:" />
                                         <Label Text="{Binding assunto}" />
                                     </StackLayout>
-                                    <Label Text="..." />
+                                    <StackLayout Orientation="Horizontal">
+                                        <Label Text="Descrição:" />
+                                        <Label Text="{Binding descricao}" />
+                                    </StackLayout>
                                 </StackLayout>
                             </ViewCell.View>
                         </ViewCell>

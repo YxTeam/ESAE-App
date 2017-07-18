@@ -6,21 +6,32 @@
     
     <ContentPage.Content>
         <StackLayout>
-            <ListView x:Name="exemplo">
+            <ListView x:Name="exemplo" RowHeight="200">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
                             <ViewCell.View>
-                                <StackLayout Orientation="Vertical">
-                                    <StackLayout Orientation="Horizontal" HorizontalOptions="Start">
+                                <StackLayout VerticalOptions="FillAndExpand" Orientation="Vertical">
+                                    <StackLayout Orientation="Horizontal">
+                                        <Label Text="Dia:" />
                                         <Label Text="{Binding dia}" />
+                                    </StackLayout>
+                                    <StackLayout Orientation="Horizontal">
+                                        <Label Text="Hora:" />
                                         <Label Text="{Binding hora}" />
                                     </StackLayout>
-                                    <StackLayout Orientation="Horizontal" HorizontalOptions="End">
-                                        <Label Text="{Binding assunto}" />
+                                    <StackLayout Orientation="Horizontal">
+                                        <Label Text="Local:" />
                                         <Label Text="{Binding local}" />
                                     </StackLayout>
-                                    <Label Text="..." />
+                                    <StackLayout Orientation="Horizontal">
+                                        <Label Text="Assunto:" />
+                                        <Label Text="{Binding assunto}" />
+                                    </StackLayout>
+                                    <StackLayout Orientation="Horizontal">
+                                        <Label Text="Descrição:" />
+                                        <Label Text="{Binding descricao}" />
+                                    </StackLayout>
                                 </StackLayout>
                             </ViewCell.View>
                         </ViewCell>

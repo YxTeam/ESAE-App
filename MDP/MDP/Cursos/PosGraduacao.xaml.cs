@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
-using MDP.Controller;
+using MDP.Controllers;
 
 namespace MDP.Cursos
 {
@@ -24,6 +24,10 @@ namespace MDP.Cursos
 
             cursos = new CursoController();
             exemplo.ItemsSource = cursos.getCursosByType("Pós-Graduação"); //adiciona os objetos à listview
+
+            exemplo.ItemSelected += (sender, e) => {
+                ((ListView)sender).SelectedItem = null;
+            };
         }
     }
 }

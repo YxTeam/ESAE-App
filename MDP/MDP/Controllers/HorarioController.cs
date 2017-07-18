@@ -19,7 +19,7 @@ namespace MDP.Controllers
         public HorarioController()
         {
             servidor = new WS();
-            ListaHorarios = JsonConvert.DeserializeObject<List<Horario>>(servidor.PedidoServidor("http://10.0.2.2/esae/public/api/horarios").ReadLine());
+            ListaHorarios = JsonConvert.DeserializeObject<List<Horario>>(servidor.PedidoServidor("http://myesae.x10host.com/api/horarios").ReadLine());
         }
     }
 }

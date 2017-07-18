@@ -25,6 +25,10 @@ namespace MDP.AreaAlunos
 
             horarios = new HorarioController();
             exemplo.ItemsSource = horarios.ListaHorarios; //adiciona os objetos à listview
+
+            exemplo.ItemSelected += (sender, e) => {
+                ((ListView)sender).SelectedItem = null;
+            };
         }
     }
 }

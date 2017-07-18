@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using MDP.API;
 using MDP.Models;
 
-namespace MDP.Controller
+namespace MDP.Controllers
 {
     public class CursoController
     {
@@ -19,7 +19,7 @@ namespace MDP.Controller
         public CursoController()
         {
             servidor = new WS();
-            ListaCursos = JsonConvert.DeserializeObject<List<Curso>>(servidor.PedidoServidor("http://10.0.2.2/esae/public/api/cursos").ReadLine());
+            ListaCursos = JsonConvert.DeserializeObject<List<Curso>>(servidor.PedidoServidor("http://myesae.x10host.com/api/cursos").ReadLine());
         }
 
         public List<Curso> getCursosByType(string _tipo)

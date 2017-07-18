@@ -6,21 +6,36 @@
     
     <ContentPage.Content>
         <StackLayout>
-            <ListView x:Name="exemplo">
+            <ListView x:Name="exemplo" RowHeight="150">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
                             <ViewCell.View>
-                                <StackLayout Orientation="Vertical">
-                                    <StackLayout Orientation="Horizontal" HorizontalOptions="Start">
-                                        <Label Text="Disciplina" />
+                                <StackLayout VerticalOptions="FillAndExpand" Orientation="Vertical">
+                                    <StackLayout Orientation="Horizontal">
+                                        <Label Text="Dia:" />
+                                        <Label Text="{Binding dia}" />
+                                    </StackLayout>
+                                    <StackLayout Orientation="Horizontal">
+                                        <Label Text="Disciplina:" />
+                                        <Label Text="{Binding disciplinas}" />
+                                    </StackLayout>
+                                    <StackLayout Orientation="Horizontal">
+                                        <Label Text="Sala:" />
                                         <Label Text="{Binding sala}" />
                                     </StackLayout>
-                                    <StackLayout Orientation="Horizontal" HorizontalOptions="End">
+                                    <StackLayout Orientation="Horizontal">
+                                        <Label Text="Dia:" />
                                         <Label Text="{Binding dia}" />
-                                        <Label Text="{Binding hora}" />
                                     </StackLayout>
-                                    <Label Text="..." />
+                                    <StackLayout Orientation="Horizontal">
+                                        <Label Text="Hora de início:" />
+                                        <Label Text="{Binding hora_inicio}" />
+                                    </StackLayout>
+                                    <StackLayout Orientation="Horizontal">
+                                        <Label Text="Hora de fim:" />
+                                        <Label Text="{Binding hora_fim}" />
+                                    </StackLayout>
                                 </StackLayout>
                             </ViewCell.View>
                         </ViewCell>

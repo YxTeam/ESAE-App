@@ -19,11 +19,7 @@
                     <Button Text="Logout" TextColor="White" BackgroundColor="#e97a24" HorizontalOptions="Start" VerticalOptions="End" WidthRequest="65" HeightRequest="35" FontSize="10"/>
                 </StackLayout>
             </StackLayout>
-            <!--
-                <StackLayout>
-                    <Image Source="test.jpg" Aspect="AspectFit" />
-                </StackLayout>
-            -->
+
             <StackLayout BackgroundColor="White">
                 <ListView x:Name="navigationDrawerList"
                           SeparatorVisibility="None"

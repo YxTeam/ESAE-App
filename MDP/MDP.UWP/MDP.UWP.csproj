@@ -108,6 +108,28 @@
     <None Include="MDP.UWP_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
+    <AndroidResource Include="Assets\circletest.png" />
+    <AndroidResource Include="Assets\ESAE_cor.jpg" />
+    <AndroidResource Include="Assets\ic_class.png" />
+    <AndroidResource Include="Assets\ic_contacts_black.png" />
+    <AndroidResource Include="Assets\ic_contacts_white.png" />
+    <AndroidResource Include="Assets\ic_date_black.png" />
+    <AndroidResource Include="Assets\ic_date_white.png" />
+    <AndroidResource Include="Assets\ic_description.png" />
+    <AndroidResource Include="Assets\ic_event_black.png" />
+    <AndroidResource Include="Assets\ic_event_white.png" />
+    <AndroidResource Include="Assets\ic_home.png" />
+    <AndroidResource Include="Assets\ic_info_black.png" />
+    <AndroidResource Include="Assets\ic_info_white.png" />
+    <AndroidResource Include="Assets\ic_payment.png" />
+    <AndroidResource Include="Assets\ic_person.png" />
+    <AndroidResource Include="Assets\ic_school.png" />
+    <AndroidResource Include="Assets\icon.png" />
+    <AndroidResource Include="Assets\logoe.png" />
+    <AndroidResource Include="Assets\logz.png" />
+    <AndroidResource Include="Assets\man.png" />
+    <AndroidResource Include="Assets\quickteste.png" />
+    <AndroidResource Include="Assets\xinas.png" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-100.png" />
     <Content Include="Assets\LockScreenLogo.scale-125.png" />

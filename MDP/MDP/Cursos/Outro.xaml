@@ -2,21 +2,28 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MDP.Cursos.Outro"
-             Title="Mestrados">
+             Title="Outros">
     
     <ContentPage.Content>
         <StackLayout>
-            <ListView x:Name="exemplo">
+            <ListView x:Name="exemplo" RowHeight="80">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
                             <ViewCell.View>
-                                <StackLayout Orientation="Vertical">
+                                <StackLayout VerticalOptions="FillAndExpand" Orientation="Vertical">
                                     <StackLayout Orientation="Horizontal">
+                                        <Label Text="Nome:" />
                                         <Label Text="{Binding nome}" />
+                                    </StackLayout>
+                                    <StackLayout Orientation="Horizontal">
+                                        <Label Text="Anos:" />
                                         <Label Text="{Binding anos}" />
                                     </StackLayout>
-                                    <Label Text="..." />
+                                    <StackLayout Orientation="Horizontal">
+                                        <Label Text="Coordenador:" />
+                                        <Label Text="{Binding coordenador}" />
+                                    </StackLayout>
                                 </StackLayout>
                             </ViewCell.View>
                         </ViewCell>
