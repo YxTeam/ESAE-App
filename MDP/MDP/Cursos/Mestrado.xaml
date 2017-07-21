@@ -6,7 +6,7 @@
     
     <ContentPage.Content>
         <StackLayout>
-            <ListView x:Name="exemplo" HasUnevenRows="True" SeparatorVisibility="Default">
+            <ListView x:Name="exemplo" HasUnevenRows="True" SeparatorVisibility="Default" SeparatorColor="Black">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
