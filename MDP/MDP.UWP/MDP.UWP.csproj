@@ -108,7 +108,6 @@
     <None Include="MDP.UWP_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Assets\circletest.png" />
     <AndroidResource Include="Assets\ESAE_cor.jpg" />
     <AndroidResource Include="Assets\ic_class.png" />
     <AndroidResource Include="Assets\ic_contacts_black.png" />
@@ -130,6 +129,8 @@
     <AndroidResource Include="Assets\man.png" />
     <AndroidResource Include="Assets\quickteste.png" />
     <AndroidResource Include="Assets\xinas.png" />
+    <Content Include="Assets\circletest.png" />
+    <AndroidResource Include="Assets\ic_business_black.png" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-100.png" />
     <Content Include="Assets\LockScreenLogo.scale-125.png" />

@@ -16,9 +16,9 @@ namespace MDP
         {
             InitializeComponent();
 
-            this.Children.Add(new Cursos.Mestrado());
-            this.Children.Add(new Cursos.PosGraduacao());
-            this.Children.Add(new Cursos.Outro());
+            this.Children.Add(new Cursos.Mestrado()); //adiciona a página à tabpage
+            this.Children.Add(new Cursos.PosGraduacao()); //adiciona a página à tabpage
+            this.Children.Add(new Cursos.Outro()); //adiciona a página à tabpage
         }
     }
 }

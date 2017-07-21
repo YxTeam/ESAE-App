@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MDP.AreaAlunos.Estagios"
+             Title="Estagios">
+    
+    <ContentPage.Content>
+        <StackLayout>
+            <ListView x:Name="exemplo" HasUnevenRows="True" SeparatorVisibility="Default" SeparatorColor="Black">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <ViewCell.View>
+                                <StackLayout VerticalOptions="FillAndExpand" Orientation="Vertical" Padding="20, 10, 20, 10">
+                                    <StackLayout Orientation="Horizontal">
+                                        <Label Text="{Binding empresa}" FontSize="Medium" TextColor="#006660"/>
+                                    </StackLayout>
+                                    <StackLayout Orientation="Horizontal">
+                                        <Label Text="Àrea:" FontAttributes="Bold"/>
+                                        <Label Text="{Binding area}" />
+                                    </StackLayout>
+                                    <StackLayout Orientation="Horizontal">
+                                        <Label Text="Nº Horas:" FontAttributes="Bold"/>
+                                        <Label Text="{Binding n_horas}" />
+                                    </StackLayout>
+                                    <StackLayout Orientation="Horizontal">
+                                        <Label Text="Local:" FontAttributes="Bold"/>
+                                        <Label Text="{Binding local}" />
+                                    </StackLayout>
+                                    <StackLayout Orientation="Horizontal">
+                                        <Label Text="Contacto:" FontAttributes="Bold"/>
+                                        <Label Text="{Binding contacto}" />
+                                    </StackLayout>
+                                </StackLayout>
+                            </ViewCell.View>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

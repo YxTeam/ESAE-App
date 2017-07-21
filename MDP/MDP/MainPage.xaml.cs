@@ -15,8 +15,8 @@ namespace MDP
 
             Master = new Master();
             Detail = new NavigationPage(new Detail()) { 
-                BarBackgroundColor = Color.FromHex("#006660"),
-                BarTextColor = Color.White
+                BarBackgroundColor = Color.FromHex("#006660"), //mete a cor da navigationbar
+                BarTextColor = Color.White //mete a cor do texto da navigationbar
             };
 
             App.mdp = this;

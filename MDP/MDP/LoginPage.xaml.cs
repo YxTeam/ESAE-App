@@ -10,9 +10,9 @@ using Xamarin.Forms.Xaml;
 namespace MDP
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Page3 : ContentPage
+    public partial class LoginPage : ContentPage
     {
-        public Page3()
+        public LoginPage()
         {
             InitializeComponent();
         }

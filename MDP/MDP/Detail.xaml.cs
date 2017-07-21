@@ -18,19 +18,19 @@ namespace MDP
             InitializeComponent();
         }
 
+        private void btnCursos_Clicked(object sender, EventArgs e)
+        {
+            App.mdp.Detail.Navigation.PushAsync(new CursoPage());
+        }
+
         private void btnLogin_Clicked(object sender, EventArgs e)
         {
-            App.mdp.Detail.Navigation.PushAsync(new Page2());
+            App.mdp.Detail.Navigation.PushAsync(new LoginPage());
         }
 
         private void btnContact_Clicked(object sender, EventArgs e)
         {
-            App.mdp.Detail.Navigation.PushAsync(new Page3());
-        }
-
-        private void btnCursos_Clicked(object sender, EventArgs e)
-        {
-            App.mdp.Detail.Navigation.PushAsync(new CursoPage());
+            App.mdp.Detail.Navigation.PushAsync(new ContactosPage());
         }
     }
 }

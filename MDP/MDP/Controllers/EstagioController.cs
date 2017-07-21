@@ -11,15 +11,15 @@ using MDP.Models;
 
 namespace MDP.Controllers
 {
-    public class DocumentoController
+    public class EstagioController
     {
         private WS servidor; //ligação ao servidor
-        public List<Documento> ListaDocumentos; //lista de objetos do model
+        public List<Estagio> ListaEstagios; //lista de objetos do model
 
-        public DocumentoController()
+        public EstagioController()
         {
             servidor = new WS();
-            ListaDocumentos = JsonConvert.DeserializeObject<List<Documento>>(servidor.PedidoServidor("http://myesae.x10host.com/api/documentos").ReadLine());
+            ListaEstagios = JsonConvert.DeserializeObject<List<Estagio>>(servidor.PedidoServidor("http://myesae.x10host.com/api/estagios").ReadLine());
         }
     }
 }
