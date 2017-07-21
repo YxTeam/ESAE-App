@@ -22,7 +22,7 @@ namespace MDP.Controllers
             ListaCursos = JsonConvert.DeserializeObject<List<Curso>>(servidor.PedidoServidor("http://myesae.x10host.com/api/cursos").ReadLine());
         }
 
-        public List<Curso> getCursosByType(string _tipo)
+        public List<Curso> getCursosByType(string _tipo) //precorre todos os cursos e retorna todos com o tipo definido na page da lista
         {
             List<Curso> temp = new List<Curso>();
             foreach (Curso curso in ListaCursos)

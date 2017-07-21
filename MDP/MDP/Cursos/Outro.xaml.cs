@@ -23,10 +23,10 @@ namespace MDP.Cursos
             InitializeComponent();
 
             cursos = new CursoController();
-            exemplo.ItemsSource = cursos.getCursosByType("Outro"); //adiciona os objetos à listview
+            exemplo.ItemsSource = cursos.getCursosByType("Outro"); //adiciona os objetos à listview em que o tipo é Outro
 
             exemplo.ItemSelected += (sender, e) => {
-                ((ListView)sender).SelectedItem = null;
+                ((ListView)sender).SelectedItem = null; //faz com que a lista não possa ser selecionada
             };
         }
     }

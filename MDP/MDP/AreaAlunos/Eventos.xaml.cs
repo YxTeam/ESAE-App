@@ -26,7 +26,7 @@ namespace MDP.AreaAlunos
             exemplo.ItemsSource = eventos.ListaEventos; //adiciona os objetos à listview
 
             exemplo.ItemSelected += (sender, e) => {
-                ((ListView)sender).SelectedItem = null;
+                ((ListView)sender).SelectedItem = null; //faz com que a lista não possa ser selecionada
             };
         }
     }

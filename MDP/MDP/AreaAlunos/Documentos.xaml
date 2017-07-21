@@ -6,21 +6,23 @@
     
     <ContentPage.Content>
         <StackLayout>
-            <ListView x:Name="exemplo">
+            <ListView x:Name="exemplo" HasUnevenRows="True" SeparatorVisibility="Default" SeparatorColor="Black">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
                             <ViewCell.View>
-                                <StackLayout VerticalOptions="FillAndExpand" Orientation="Vertical">
+                                <StackLayout VerticalOptions="FillAndExpand" Orientation="Vertical" Padding="20, 10, 20, 10">
                                     <StackLayout Orientation="Horizontal">
-                                        <Label Text="Categoria:" />
+                                        <Label Text="{Binding nome}" FontSize="Medium" TextColor="#006660"/>
+                                    </StackLayout>
+                                    <StackLayout Orientation="Horizontal">
+                                        <Label Text="Categoria:" FontAttributes="Bold"/>
                                         <Label Text="{Binding categoria}" />
                                     </StackLayout>
                                     <StackLayout Orientation="Horizontal">
-                                        <Label Text="{Binding nome}" />
+                                        <Label Text="Link:" FontAttributes="Bold"/>
                                     </StackLayout>
                                     <StackLayout Orientation="Horizontal">
-                                        <Label Text="Link:" />
                                         <Label Text="{Binding link}" />
                                     </StackLayout>
                                 </StackLayout>
